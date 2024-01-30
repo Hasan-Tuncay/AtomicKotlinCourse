@@ -1,11 +1,11 @@
 // NumberTypes/Task3.kt
 package numberTypesExercise3
 
-fun convertFahrenheitToCelsius(f: Int): Double =
-  TODO()
+fun convertFahrenheitToCelsius(f: Int): Double = ((f-32).toDouble() * 5/9).toDouble()
 
-fun convertCelsiusToFahrenheit(c: Int): Double =
-  TODO()
+
+fun convertCelsiusToFahrenheit(c: Int): Double =(( c.toDouble()*9/5).toDouble()+32).toDouble()
+
 
 fun main() {
   println(convertFahrenheitToCelsius(68)) // 20.0
