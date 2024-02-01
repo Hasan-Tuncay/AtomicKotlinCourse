@@ -2,7 +2,7 @@
 package loopingAndRangesExercise2
 
 fun factorial(n: Int): Long {
-  var result = 1L
+  var result =1L
   for (i in 1..n) {
     result *= i
   }
@@ -10,7 +10,11 @@ fun factorial(n: Int): Long {
 }
 
 fun sumOfFactorials(n: Int): Long {
-  TODO()
+  var s=0L
+for (i in 1.. n){
+s   += factorial(i)
+}
+  return s
 }
 
 fun main() {

@@ -4,6 +4,7 @@ package repetitionWithWhileExercise5
 fun getFooResult(): Int = 736
 
 fun main() {
-  val fooResult = getFooResult
+  var fooResult1 = getFooResult()
+  val fooResult = fooResult1
   println("Foo result is: $fooResult")
 }
