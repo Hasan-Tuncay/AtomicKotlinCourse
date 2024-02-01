@@ -2,7 +2,11 @@
 package theInKeywordExercise1
 
 fun getAlphabet(): String {
-  TODO()
+  var letter=""
+  for ( x in 'a'..'z'){
+letter += x
+  }
+  return letter
 }
 
 fun main() {
