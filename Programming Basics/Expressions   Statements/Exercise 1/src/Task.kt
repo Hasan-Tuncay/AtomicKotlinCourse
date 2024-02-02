@@ -2,5 +2,8 @@
 package expressionsAndStatementsExercise1
 
 fun main() {
-  TODO()
+  println(println(1))
+ val s= println(1)
+
+  println(s)
 }
