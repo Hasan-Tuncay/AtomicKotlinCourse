@@ -7,9 +7,16 @@ fun isPalindrome(s: String): Boolean =
 fun isPalIgnoreCase(s: String): Boolean =
   isPalindrome(s.lowercase())
 
-fun isPalIgnoreSpecial(s: String): Boolean {
-  TODO()
-}
+
+  fun isPalIgnoreSpecial(s: String): Boolean {
+    var onlyLetters = ""
+    for (ch in s) {
+      if (ch in 'a'..'z' || ch in 'A'..'Z') {
+        onlyLetters += ch
+      }
+    }
+    return isPalIgnoreCase(onlyLetters)
+  }
 
 fun main() {
   println(isPalIgnoreSpecial("Was It A Rat I Saw? ..."))  // true
