@@ -4,7 +4,7 @@
 class Giraffe
 class Bear
 class Hippo
-
+class hasan
 fun main() {
   // Create some objects:
   val g1 = Giraffe()

@@ -5,5 +5,7 @@ fun main() {
   val r = IntRange(0, 10)
 
   val s = "abc"
+  r.sum()
+  s.reversed()
 
 }
