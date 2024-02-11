@@ -2,6 +2,9 @@
 package constructorsExercise3
 
 class Robot(val fieldSize: Int, var x: Int, var y: Int) {
+  override fun toString(): String {
+    return  "Robot(x=$x, y=$y)"
+  }
   fun crossBoundary(coordinate: Int): Int {
     val inBounds = coordinate % fieldSize
     return if (inBounds < 0) {
@@ -31,7 +34,7 @@ class Robot(val fieldSize: Int, var x: Int, var y: Int) {
     y = crossBoundary(y)
   }
 
-  fun getLocation(): String = "($x, $y)"
+  fun getLocation(): String ="Robot(x=$x, y=$y)"
 
   /* Implement toString */
 }

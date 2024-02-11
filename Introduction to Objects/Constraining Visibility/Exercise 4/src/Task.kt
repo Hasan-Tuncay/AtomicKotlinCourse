@@ -2,6 +2,10 @@
 package constrainingVisibilityExercise4
 
 fun printSum(x: Int) {
+  extracted(x)
+}
+
+private fun extracted(x: Int) {
   if (x <= 0) {
     println("Incorrect input: $x should be positive")
     return

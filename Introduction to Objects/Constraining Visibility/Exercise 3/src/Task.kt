@@ -15,26 +15,36 @@ class Robot(
     }
   }
 
-  
+  private fun checkSteps(steps: Int): Boolean {
+    if (steps <= 0) {
+      println("steps argument must be positive, is $steps")
+      return true
+    }
+    return false
+  }
 
   fun right(steps: Int) {
+    if (checkSteps(steps)) return
     x += steps
-  x = crossBoundary(x)
+    x = crossBoundary(x)
   }
 
   fun left(steps: Int) {
+    if (checkSteps(steps)) return
     x -= steps
-  x = crossBoundary(x)
+    x = crossBoundary(x)
   }
 
   fun down(steps: Int) {
+    if (checkSteps(steps)) return
     y += steps
-  y = crossBoundary(y)
+    y = crossBoundary(y)
   }
 
   fun up(steps: Int) {
+    if (checkSteps(steps)) return
     y -= steps
-  y = crossBoundary(y)
+    y = crossBoundary(y)
   }
 
   fun getLocation(): String = "($x, $y)"

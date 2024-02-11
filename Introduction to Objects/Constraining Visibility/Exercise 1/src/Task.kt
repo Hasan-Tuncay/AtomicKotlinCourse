@@ -1,10 +1,19 @@
 // Visibility/Task1.kt
 package constrainingVisibilityExercise1
 
-// TODO
+import AlienSpecies
+
+class Alien(public val name : String, public val species: String, private var planet : String){
+    override fun toString(): String {
+        return "Alien $name, $species: $planet"
+    }
+    fun movePlanet(newPlanet: String) {
+        planet = newPlanet
+    }
+}
 
 fun main() {
-  // TODO
+
 }
 /* Expected output:
 Alien Arthricia, Cat Person: PurgePlanet
