@@ -4,6 +4,7 @@ import atomictest.eq
 fun main() {
   val ints = listOf(99, 3, 5, 7, 11, 13)
   ints eq "[99, 3, 5, 7, 11, 13]"   // [1]
+val list= intArrayOf(1,2,3,4)
 
   // Select each element in the List:
   var result = ""
