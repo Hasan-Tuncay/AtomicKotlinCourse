@@ -1,9 +1,14 @@
 // Varargs/Task4.kt
 package variableArgumentListsExercise4
 import atomictest.eq
+import manipulatingListsExercise6.flatten
 
 fun flatten(listOfLists: List<List<String>>): List<String> {
-  TODO()
+  val result = mutableListOf<String>()
+  for (list in listOfLists){
+    result.addAll(list)
+  }
+  return result
 }
 
 fun main() {

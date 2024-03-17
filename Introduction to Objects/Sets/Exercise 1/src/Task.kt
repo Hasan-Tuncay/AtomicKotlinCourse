@@ -3,7 +3,11 @@ package setsExercise1
 import atomictest.eq
 
 fun hasUniqueCharacters(s: String): Boolean {
-  TODO()
+return  if (s.toSet().toList() == s.toList()){true} else false
+
+}
+fun hasUniqueCharacters2(s: String): Boolean {
+  return s.toSet().size == s.length
 }
 
 fun main() {
