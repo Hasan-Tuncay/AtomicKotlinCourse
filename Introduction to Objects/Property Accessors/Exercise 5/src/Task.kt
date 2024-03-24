@@ -1,15 +1,13 @@
 // PropertyAccessors/Task5.kt
 package propertyAccessorsExercise5
 import atomictest.eq
+import exceptionHandlingExercise1.hamsters
 
 class Hamster(val name: String)
 
-class Cage(private val maxCapacity: Int) {
+class Cage(val maxCapacity: Int) {
   private val hamsters =
     mutableListOf<Hamster>()
-
-  val capacity: Int
-    get() = maxCapacity - hamsters.size
 
   val full: Boolean
     get() = hamsters.size == maxCapacity
@@ -25,6 +23,9 @@ class Cage(private val maxCapacity: Int) {
   fun takeHamster(): Hamster =
     hamsters.removeAt(0)
 }
+
+val Cage.capacity: Int
+  get() = maxCapacity - hamsters.size
 
 fun main() {
   val cage = Cage(maxCapacity = 2)

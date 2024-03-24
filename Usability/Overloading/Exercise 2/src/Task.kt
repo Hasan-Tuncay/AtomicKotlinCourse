@@ -2,9 +2,12 @@
 package overloadingExercise2
 
 class Dog {
-  // bark function
+    fun bark(  n: Int, say: String = "woof") {
+        repeat(n) {
+            println(say)
+        }
+    }
 }
-
 fun main() {
 /*
   val dog = Dog()

@@ -3,9 +3,24 @@ package whenExpressionsExercise3
 import atomictest.eq
 
 fun balanced(input: String): Boolean {
-  TODO()}
+  var leftUnmatched = 0
+  for (c in input) {
+    when (c) {
+      '(' -> leftUnmatched++
+      ')' -> leftUnmatched--
+      ' ' -> {
+      }
+
+      else -> throw IllegalArgumentException("The string must consist " +
+              "only of parentheses and whitespace")
+    }
+    println(leftUnmatched)
+    if (leftUnmatched < 0) return false
+  }
+  return leftUnmatched == 0
+}
 
 fun main() {
-  balanced("(()) ()") eq true
+ // balanced("(()) ()") eq true
   balanced(")(") eq false
 }

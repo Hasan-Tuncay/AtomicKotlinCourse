@@ -2,8 +2,8 @@
 package namedAndDefaultArgumentsExercise3
 import atomictest.eq
 
-fun joinComments(s: String): String =
-  TODO()
+fun joinComments(s: String): String =  s.trimMargin("// ").lines().joinToString("; ")
+
 
 fun main() {
   val s = """

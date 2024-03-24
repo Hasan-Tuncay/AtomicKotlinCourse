@@ -3,6 +3,13 @@ package dataClassesExercise1
 
 // Implement AirlineTicket class
 
+data class AirlineTicket(
+    val firstName: String,
+    val lastName: String,
+    val ticket: Int,
+    val origin: String,
+    val destination: String
+)
 fun main() {
 /*
   val ticket = AirlineTicket("Bruce", "Eckel",

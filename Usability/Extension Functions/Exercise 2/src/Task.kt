@@ -2,9 +2,9 @@
 package extensionFunctionsExercise2
 import atomictest.eq
 
-fun Int.isOdd(): Boolean = TODO()
+fun Int.isOdd(): Boolean = if (this%2==0 )false else true
 
-fun Int.isEven(): Boolean = TODO()
+fun Int.isEven(): Boolean =  if (this%2==0 )true else false
 
 fun main() {
   1.isOdd() eq true
